@@ -196,6 +196,10 @@ button {
   cursor: pointer;
 }
 
+.splash-container {
+  margin-bottom: 300px;
+}
+
 .splash-container h1 {
   font-size: 56px;
   font-weight: 800;
@@ -219,4 +223,63 @@ button {
 .splash-container button:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.block-container {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F1FF));
+  background-image: linear-gradient(#FFFFFF, #F0F1FF);
+  height: 600px;
+}
+
+footer {
+  background-color: #13183F;
+  padding: 20px 0;
+}
+
+footer .bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bottom-container img {
+  width: 111.17px;
+  height: 27.68px;
+}
+
+footer .bottom-container button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4851FF), to(#F02AA6));
+  background-image: linear-gradient(#4851FF, #F02AA6);
+  position: relative;
+}
+
+footer .bottom-container button::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: -1;
+  opacity: 0%;
+}
+
+footer .bottom-container button:hover {
+  cursor: pointer;
+}
+
+footer .bottom-container button:hover::after {
+  opacity: 50%;
 }
