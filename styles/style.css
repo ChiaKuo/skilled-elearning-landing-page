@@ -159,6 +159,18 @@ button {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+button {
+  color: white;
+  width: 167px;
+  height: 56px;
+  border-radius: 30px;
+  border: none;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .top-container {
   margin-top: 20px;
   display: -webkit-box;
@@ -174,6 +186,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 120px;
 }
 
 .top-container img {
@@ -182,14 +195,35 @@ button {
 }
 
 .top-container button {
-  color: white;
   background-color: #13183F;
-  width: 167px;
-  height: 56px;
-  border-radius: 30px;
-  border: none;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.top-container button:hover {
+  background-color: #666CA3;
+  cursor: pointer;
+}
+
+.splash-container h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 70px;
+  margin-bottom: 40px;
+}
+
+.splash-container p {
+  line-height: 28px;
   font-size: 18px;
-  font-weight: bold;
+  color: #83869A;
+  width: 50%;
+  margin-bottom: 45px;
+}
+
+.splash-container button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
+  background-image: linear-gradient(#FF6F48, #F02AA6);
+}
+
+.splash-container button:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }

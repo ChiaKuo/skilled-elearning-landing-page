@@ -1,0 +1,26 @@
+.splash-container {
+
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    line-height: 28px;
+    font-size: 18px;
+    color: #83869A;
+    width: 50%;
+    margin-bottom: 45px;
+  }
+
+  button {
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+  }
+
+  button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
