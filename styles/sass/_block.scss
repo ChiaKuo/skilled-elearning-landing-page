@@ -1,4 +1,39 @@
-.block-container {
+.block-background {
   background-image: linear-gradient(#FFFFFF, #F0F1FF);
-  height: 600px;
+  padding-bottom: 100px;
+}
+
+.block-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div:first-child {
+    box-sizing: border-box;
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+    padding: 50px 80px 0px 40px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 800;
+      color: white;
+    }
+  }
+
+  .block:nth-child(2),
+  .block:nth-child(5) {
+    margin: 40px 20px;
+  }
+
+  .block {
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 350px;
+    width: calc((100%/3) - 40px/3);
+    background-color: #FFFFFF;
+
+
+  }
 }
