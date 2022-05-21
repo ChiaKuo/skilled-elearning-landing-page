@@ -256,19 +256,12 @@ body {
       flex-wrap: wrap;
 }
 
-.block-container div:first-child {
+.block-container .block:first-child {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF6F48), to(#F02AA6));
   background-image: linear-gradient(#FF6F48, #F02AA6);
   padding: 50px 80px 0px 40px;
-}
-
-.block-container div:first-child h2 {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 800;
-  color: white;
 }
 
 .block-container .block:nth-child(2),
@@ -282,10 +275,17 @@ body {
   padding: 40px 35px 0px 35px;
   margin: 40px 0;
   border-radius: 25px;
-  height: 350px;
+  height: 400px;
   width: calc((100%/3) - 60px/3);
   background-color: #FFFFFF;
   position: relative;
+}
+
+.block-container .block h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
+  color: white;
 }
 
 .block-container .block h3 {
@@ -373,4 +373,68 @@ footer .bottom-container button:hover {
 
 footer .bottom-container button:hover::after {
   opacity: 50%;
+}
+
+/* block-container media queries */
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 95%;
+  }
+  .block-background {
+    padding-bottom: 50px;
+  }
+  .block-container .block:first-child {
+    padding-right: 60px;
+  }
+  .block-container .block:nth-child(even) {
+    margin: 25px 0px 25px 5px;
+  }
+  .block-container .block:nth-child(odd) {
+    margin: 25px 5px 25px 0px;
+  }
+  .block-container .block {
+    width: calc((100%/2 - 5px));
+    padding: 25px 10px 0px 30px;
+    height: 250px;
+  }
+  .block-container .block h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .block-container .block h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 15px 0;
+  }
+  .block-container .block p {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 20px 0;
+  }
+  .block-container .block a {
+    bottom: 30px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 584px) {
+  .wrapper {
+    width: 95%;
+  }
+  .splash-container {
+    margin-bottom: 50px;
+  }
+  .block-container .block:first-child {
+    padding: 30px 60px 0px 40px;
+    height: 120px;
+  }
+  .block-container .block:nth-child(even) {
+    margin: 25px 0px 25px 0px;
+  }
+  .block-container .block:nth-child(odd) {
+    margin: 25px 0px 25px 0px;
+  }
+  .block-container .block {
+    width: calc((100%));
+  }
 }
