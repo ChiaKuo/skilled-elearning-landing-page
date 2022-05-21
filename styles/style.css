@@ -164,6 +164,12 @@ button {
   font-weight: bold;
 }
 
+body {
+  background-image: url(../assets/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 110vh -20vh;
+}
+
 .top-container {
   margin-top: 20px;
   display: -webkit-box;
@@ -211,8 +217,15 @@ button {
   line-height: 28px;
   font-size: 18px;
   color: #83869A;
-  width: 50%;
+  width: 37%;
   margin-bottom: 45px;
+}
+
+.splash-container img {
+  position: absolute;
+  top: -250px;
+  right: -200px;
+  z-index: -1;
 }
 
 .splash-container button {
@@ -260,16 +273,49 @@ button {
 
 .block-container .block:nth-child(2),
 .block-container .block:nth-child(5) {
-  margin: 40px 20px;
+  margin: 40px 30px;
 }
 
 .block-container .block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 35px 0px 35px;
+  margin: 40px 0;
   border-radius: 25px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   height: 350px;
-  width: calc((100%/3) - 40px/3);
+  width: calc((100%/3) - 60px/3);
   background-color: #FFFFFF;
+  position: relative;
+}
+
+.block-container .block h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.block-container .block p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #83869A;
+  margin: 40px 0;
+}
+
+.block-container .block a {
+  text-decoration: none;
+  color: #F74780;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 50px;
+}
+
+.block-container .block img {
+  position: absolute;
+  left: 35px;
+  top: -30px;
 }
 
 footer {

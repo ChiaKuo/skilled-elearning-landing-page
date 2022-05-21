@@ -23,17 +23,47 @@
 
   .block:nth-child(2),
   .block:nth-child(5) {
-    margin: 40px 20px;
+    margin: 40px 30px;
   }
 
   .block {
+    box-sizing: border-box;
+    padding: 40px 35px 0px 35px;
+    margin: 40px 0;
     border-radius: 25px;
-    margin-top: 40px;
-    margin-bottom: 40px;
     height: 350px;
-    width: calc((100%/3) - 40px/3);
+    width: calc((100%/3) - 60px/3);
     background-color: #FFFFFF;
+    position: relative;
 
+    h3 {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 28px;
+      margin: 20px 0;
+    }
 
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #83869A;
+      margin: 40px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #F74780;
+      font-size: 18px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 50px;
+    }
+
+    img {
+      position: absolute;
+      left: 35px;
+      top: -30px;
+    }
   }
 }
