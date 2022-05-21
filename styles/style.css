@@ -135,7 +135,7 @@ table {
 
 .wrapper {
   max-width: 1200px;
-  width: 75%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -167,7 +167,7 @@ button {
 body {
   background-image: url(../assets/image-hero-desktop.png);
   background-repeat: no-repeat;
-  background-position: top -200px right -350px;
+  background-position: top -180px right -350px;
 }
 
 .top-container {
