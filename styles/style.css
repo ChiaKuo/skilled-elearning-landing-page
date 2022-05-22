@@ -380,6 +380,15 @@ footer .bottom-container button:hover::after {
   .wrapper {
     width: 95%;
   }
+  .splash-container h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 51px;
+    margin-bottom: 40px;
+  }
+  .splash-container p {
+    width: 50%;
+  }
   .block-background {
     padding-bottom: 50px;
   }
@@ -416,13 +425,51 @@ footer .bottom-container button:hover::after {
   }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 584px) {
-  .wrapper {
-    width: 95%;
+@media (max-width: 1014px) {
+  body {
+    background-image: url(../assets/image-hero-tablet.png);
+    background-position: top -60px right -300px;
+  }
+}
+
+@media (max-width: 658px) {
+  body {
+    background-image: none;
+    background-position: top 0px right 0px;
+  }
+  .image-container {
+    background-image: url(../assets/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 330px;
   }
   .splash-container {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  }
+  .splash-container p {
+    width: 100%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 594px) {
+  button {
+    width: 140px;
+    height: 48px;
+  }
+  .top-container {
+    margin-bottom: 40px;
+  }
+  .top-container img {
+    width: 89px;
+    height: 23px;
+  }
+  footer .bottom-container img {
+    width: 89px;
+    height: 23px;
+  }
+  .wrapper {
+    width: 95%;
   }
   .block-container .block:first-child {
     padding: 30px 60px 0px 40px;
